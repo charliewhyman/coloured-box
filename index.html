@@ -2,9 +2,29 @@
 <html>
     <head>
         <meta charset='UTF-8'>
-        <title>Coloured Box</title>
+        <title>Colored Box</title>
         <link rel='stylesheet' href='css/style.css' />
     </head>
     <body>
+        <div id = 'headerContainer' class = 'container'>
+            <h1>Coloured Box Generator</h1>
+        </div>
+        <div id = 'inputContainer' class = 'container'>
+            <h2 id='inputTitle'>Input</h2>
+            <input type = 'number' id = 'widthInput' value="100">
+            <label for = 'widthInput'>Choose box width (in pixels)</label>
+
+            <input type = 'number' id = 'heightInput' value="100">
+            <label for = 'heightInput'>Choose box height (in pixels)</label>
+
+            <input type = 'color' id = 'colorInput' value="#e66465">
+            <label for = 'colorInput'>Choose box color</label>
+        </div>
+
+        <div id = 'boxContainer' class = 'container'>
+            <h2 id='canvasTitle'>Generated Box</h2>
+            <canvas id="boxCanvas" width="400" height="400"></canvas>
+        </div>
+    </body>
     <script src='js/script.js'></script>
 </html>
